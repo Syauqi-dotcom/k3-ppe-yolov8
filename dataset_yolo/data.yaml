@@ -1,0 +1,11 @@
+# path dikosongkan: Ultralytics memakai folder file ini, jadi dataset portabel
+train: images/train
+val: images/val
+names:
+  0: person
+  1: hat
+  2: gloves
+  3: vest
+  4: no_hat
+  5: no_gloves
+  6: no_vest

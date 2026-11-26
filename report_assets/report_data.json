@@ -1,0 +1,166 @@
+{
+ "kandidat": "Muhammad Syauqi Fittuqo",
+ "model": "yolov8n",
+ "base": "coco",
+ "start_weights": "yolov8n.pt",
+ "epochs_set": 100,
+ "epochs_run": 78,
+ "best_epoch": 48,
+ "imgsz": 640,
+ "batch": 16,
+ "patience": 30,
+ "seed": 42,
+ "device": "cpu",
+ "train_minutes": 56.9,
+ "n_train": 160,
+ "n_val": 40,
+ "n_unlabeled": 0,
+ "train_instances": {
+  "person": 337,
+  "hat": 286,
+  "gloves": 304,
+  "vest": 314,
+  "no_hat": 51,
+  "no_gloves": 141,
+  "no_vest": 23
+ },
+ "val_instances": {
+  "person": 92,
+  "hat": 76,
+  "gloves": 82,
+  "vest": 75,
+  "no_hat": 16,
+  "no_gloves": 29,
+  "no_vest": 17
+ },
+ "overall": {
+  "mAP50": 0.7990991545391772,
+  "mAP50-95": 0.48995825398034226,
+  "Precision": 0.8269144341706042,
+  "Recall": 0.760612641887381
+ },
+ "per_class": [
+  {
+   "kelas": "person",
+   "P": 0.981821752164246,
+   "R": 0.9891304347826086,
+   "AP50": 0.9768478260869564,
+   "AP5095": 0.8806956945804876,
+   "n_val": 92
+  },
+  {
+   "kelas": "hat",
+   "P": 0.948638868611202,
+   "R": 0.9868421052631579,
+   "AP50": 0.9819382000903549,
+   "AP5095": 0.6604642234105871,
+   "n_val": 76
+  },
+  {
+   "kelas": "gloves",
+   "P": 0.6711719805384422,
+   "R": 0.7317073170731707,
+   "AP50": 0.6852306520441722,
+   "AP5095": 0.31679083970387045,
+   "n_val": 82
+  },
+  {
+   "kelas": "vest",
+   "P": 0.9139884400041179,
+   "R": 0.9866666666666667,
+   "AP50": 0.9791312687312687,
+   "AP5095": 0.7454695528518788,
+   "n_val": 75
+  },
+  {
+   "kelas": "no_hat",
+   "P": 1.0,
+   "R": 0.7476284692869581,
+   "AP50": 0.8174801324503311,
+   "AP5095": 0.407451798041674,
+   "n_val": 16
+  },
+  {
+   "kelas": "no_gloves",
+   "P": 0.34610691042480446,
+   "R": 0.13793103448275862,
+   "AP50": 0.20196214647473226,
+   "AP5095": 0.0677610203074531,
+   "n_val": 29
+  },
+  {
+   "kelas": "no_vest",
+   "P": 0.926673087451417,
+   "R": 0.7443824656563464,
+   "AP50": 0.9511038558964257,
+   "AP5095": 0.35107464896644464,
+   "n_val": 17
+  }
+ ],
+ "ac5": {
+  "mAP50": false,
+  "mAP50_95": false
+ },
+ "near_dup": 0,
+ "test_images": {
+  "test_01_amsterdam_sheet_piling.jpg": {
+   "hat": 2
+  },
+  "test_02_builders_excavation.jpg": {
+   "gloves": 2,
+   "hat": 1,
+   "person": 3,
+   "vest": 3
+  },
+  "test_03_durham_drilling_crew.jpg": {
+   "hat": 3,
+   "person": 2,
+   "vest": 2
+  },
+  "test_04_grandcanyon_demolition.jpg": {
+   "hat": 1,
+   "person": 2,
+   "vest": 2
+  },
+  "test_05_vienna_construction_site.jpg": {
+   "hat": 3,
+   "no_gloves": 1,
+   "person": 4,
+   "vest": 4
+  }
+ },
+ "video": {
+  "name": "Worker_dismantling_scaffoldings.ogv",
+  "frames": 793,
+  "fps": 24.0,
+  "processed": 397,
+  "frames_with_det": 265,
+  "totals": {
+   "person": 146,
+   "hat": 196,
+   "gloves": 113,
+   "vest": 68,
+   "no_hat": 0,
+   "no_gloves": 0,
+   "no_vest": 0
+  }
+ },
+ "losses": {
+  "train/box_loss": [
+   1.35278,
+   0.78284
+  ],
+  "train/cls_loss": [
+   2.36196,
+   0.47113
+  ],
+  "val/box_loss": [
+   1.1916,
+   0.97691
+  ],
+  "val/cls_loss": [
+   2.87018,
+   0.49906
+  ]
+ }
+}
